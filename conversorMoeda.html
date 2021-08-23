@@ -1,0 +1,82 @@
+<html> <!--inicio HTML-->
+
+<head>
+    <title>
+        Imersão Dev - Aula 01
+    </title>
+</head>
+
+<style>  /*inicio do CSS*/
+body {
+  font-family: 'Roboto Mono',monospace;
+  min-height: 300px;
+  background-image: url('https://s2.glbimg.com/V2J_dLJx4wLQY52xmKHKtRfRrTQ=/512x320/smart/e.glbimg.com/og/ed/f/original/2019/10/24/architecture-castle-disney-771502.jpg');
+  background-color: #000000;
+  background-size: 130vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: yellow;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: white;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de Dolar
+        </h1>
+        <p class="page-subtitle">
+            Descubra os valores em dolar U$
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+<script type= "text/javascript"> // incluir codigo javascript ao documento// 
+
+var valorEmDolarTexto = prompt ("Qual valor em dolar voce quer converter?")
+var valorEmDolarNumero = parseFloat (valorEmDolarTexto)
+
+var valorEmReal = valorEmDolarNumero * 5.50
+var valorEmRealFixado =  valorEmReal.toFixed (2) 
+ 
+alert ("O resultado em real fica " + valorEmRealFixado)   
+ 
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
